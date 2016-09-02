@@ -20,7 +20,7 @@ public class ConexaoApi {
     //TODO: fazer um singleton
     private Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
-        return DriverManager.getConnection("jdbc:mysql://localhost/ibex_petshop","root","kjkszpj");
+        return DriverManager.getConnection("jdbc:mysql://localhost/ibex_petshop","usuario","senha");
     }
     
     public void setQuery(String query) throws SQLException {
